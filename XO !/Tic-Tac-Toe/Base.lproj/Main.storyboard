@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TradeWinds-Regular.ttf">
+            <string>TradeWinds</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Zzz-w3-LLB">
+                                <rect key="frame" x="20" y="49" width="374" height="813"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hna-tZ-BDG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="103.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVL-3o-W5y">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="103.5"/>
+                                                <fontDescription key="fontDescription" name="TradeWinds" family="Trade Winds" pointSize="55"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.92156862750000001" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tac" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ll-hX-x0f">
+                                                <rect key="frame" x="129.5" y="0.0" width="115" height="103.5"/>
+                                                <fontDescription key="fontDescription" name="TradeWinds" family="Trade Winds" pointSize="55"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvL-lI-73S">
+                                                <rect key="frame" x="259.5" y="0.0" width="114.5" height="103.5"/>
+                                                <fontDescription key="fontDescription" name="TradeWinds" family="Trade Winds" pointSize="55"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gl0-Mm-QuL">
+                                        <rect key="frame" x="0.0" y="118.5" width="374" height="103"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3K-QO-bRe">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="103"/>
+                                                <fontDescription key="fontDescription" name="TradeWinds" family="Trade Winds" pointSize="17"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.92156862750000001" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FM-51-LEv">
+                                                <rect key="frame" x="129.5" y="0.0" width="115" height="103"/>
+                                                <fontDescription key="fontDescription" name="TradeWinds" family="Trade Winds" pointSize="36"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWb-2p-4PN">
+                                                <rect key="frame" x="259.5" y="0.0" width="114.5" height="103"/>
+                                                <fontDescription key="fontDescription" name="TradeWinds" family="Trade Winds" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="G0O-oi-ot0">
+                                        <rect key="frame" x="0.0" y="236.5" width="374" height="103.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  PLAYER 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8Q-LY-iRf">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="103.5"/>
+                                                <fontDescription key="fontDescription" name="TradeWinds" family="Trade Winds" pointSize="32"/>
+                                                <color key="textColor" red="0.96120291950000003" green="0.93534100060000003" blue="0.85840642450000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINS!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stn-D2-2hp">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="103.5"/>
+                                                <fontDescription key="fontDescription" name="TradeWinds" family="Trade Winds" pointSize="32"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UJe-0t-mgd" userLabel="firstRow">
+                                        <rect key="frame" x="0.0" y="355" width="374" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duR-5K-cGO" userLabel="0">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="103"/>
+                                                <state key="normal" title="0" backgroundImage="emptyCell">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cellPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pgn-HB-vuN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldx-53-vJm" userLabel="1">
+                                                <rect key="frame" x="128" y="0.0" width="118" height="103"/>
+                                                <state key="normal" title="1" backgroundImage="emptyCell">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cellPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSr-x7-g0F"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIV-Yw-PO0">
+                                                <rect key="frame" x="256" y="0.0" width="118" height="103"/>
+                                                <state key="normal" title="2" backgroundImage="xCell">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cellPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6p7-Of-R0O"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6bj-xh-ydJ" userLabel="secondRow">
+                                        <rect key="frame" x="0.0" y="473" width="374" height="103.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itY-9d-H5p">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="103.5"/>
+                                                <state key="normal" title="3" backgroundImage="emptyCell">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cellPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="78n-cX-u7l"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpn-l9-ivg">
+                                                <rect key="frame" x="128" y="0.0" width="118" height="103.5"/>
+                                                <state key="normal" title="4" backgroundImage="oCell">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cellPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fna-Fq-h65"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw4-bg-XLL">
+                                                <rect key="frame" x="256" y="0.0" width="118" height="103.5"/>
+                                                <state key="normal" title="5" backgroundImage="emptyCell">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cellPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQT-Oe-2ME"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qMf-Vs-Nnh" userLabel="thirdRow">
+                                        <rect key="frame" x="0.0" y="591.5" width="374" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q30-IX-SFZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="103"/>
+                                                <state key="normal" title="6" backgroundImage="xCell">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cellPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K0c-w7-X8Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-cK-aC5">
+                                                <rect key="frame" x="128" y="0.0" width="118" height="103"/>
+                                                <state key="normal" title="7" backgroundImage="emptyCell">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cellPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kED-Ih-XrX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anp-WV-3jt">
+                                                <rect key="frame" x="256" y="0.0" width="118" height="103"/>
+                                                <state key="normal" title="8" backgroundImage="emptyCell">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cellPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWC-jT-kWi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZj-Nl-oYr">
+                                        <rect key="frame" x="0.0" y="709.5" width="374" height="103.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOy-io-kvl">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="103.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Nr-TK-mQq">
+                                                        <rect key="frame" x="107" y="43.5" width="160" height="50"/>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.92156862750000001" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="kLa-dH-T4O"/>
+                                                            <constraint firstAttribute="height" constant="50" id="oiK-g3-AMY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="TradeWinds" family="Trade Winds" pointSize="25"/>
+                                                        <state key="normal" title="Reset Game">
+                                                            <color key="titleColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="resetGamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H2E-CB-lRs"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="0Nr-TK-mQq" firstAttribute="centerX" secondItem="fOy-io-kvl" secondAttribute="centerX" id="cUu-8F-hOF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0Nr-TK-mQq" secondAttribute="bottom" constant="10" id="fQF-cq-amY"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372549019607" green="0.74117647058823533" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zzz-w3-LLB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="78v-Ku-LV6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zzz-w3-LLB" secondAttribute="trailing" constant="20" id="82w-c4-TXo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zzz-w3-LLB" secondAttribute="bottom" id="DfH-00-PPl"/>
+                            <constraint firstItem="Zzz-w3-LLB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rze-by-Z19"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cell0" destination="duR-5K-cGO" id="4Kh-HQ-Vhy"/>
+                        <outlet property="cell1" destination="Ldx-53-vJm" id="qgn-rt-V2Z"/>
+                        <outlet property="cell2" destination="CIV-Yw-PO0" id="4Gm-e9-XC3"/>
+                        <outlet property="cell3" destination="itY-9d-H5p" id="UIP-mx-zfO"/>
+                        <outlet property="cell4" destination="gpn-l9-ivg" id="d7W-as-saU"/>
+                        <outlet property="cell5" destination="qw4-bg-XLL" id="zfa-cA-xtV"/>
+                        <outlet property="cell6" destination="Q30-IX-SFZ" id="pKa-dY-mky"/>
+                        <outlet property="cell7" destination="hgr-cK-aC5" id="mBV-0V-XI8"/>
+                        <outlet property="cell8" destination="anp-WV-3jt" id="M0i-QC-KDj"/>
+                        <outlet property="player1Name" destination="E3K-QO-bRe" id="oau-Cp-ZYA"/>
+                        <outlet property="player2Name" destination="gWb-2p-4PN" id="c39-i5-YPE"/>
+                        <outlet property="playerNamesView" destination="gl0-Mm-QuL" id="PxY-O7-Teg"/>
+                        <outlet property="winnerName" destination="A8Q-LY-iRf" id="rKX-VU-U4W"/>
+                        <outlet property="winnerView" destination="G0O-oi-ot0" id="Re4-CG-Ybl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-425" y="-23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="emptyCell" width="60" height="60"/>
+        <image name="oCell" width="60" height="60"/>
+        <image name="xCell" width="60" height="60"/>
+    </resources>
+</document>
