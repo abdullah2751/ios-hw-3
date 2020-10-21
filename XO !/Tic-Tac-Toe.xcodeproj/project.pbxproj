@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0481F3172523169D00D8255A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0481F3162523169D00D8255A /* Default-568h@2x.png */; };
 		BF201919240DC3E70060A87F /* TradeWinds-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF201918240DC3E70060A87F /* TradeWinds-Regular.ttf */; };
 		BF5223C7240D34BC001AD1B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5223C6240D34BC001AD1B1 /* AppDelegate.swift */; };
 		BF5223C9240D34BC001AD1B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5223C8240D34BC001AD1B1 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0481F3162523169D00D8255A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BF201918240DC3E70060A87F /* TradeWinds-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TradeWinds-Regular.ttf"; sourceTree = "<group>"; };
 		BF5223C3240D34BC001AD1B1 /* Tic-Tac-Toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic-Tac-Toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5223C6240D34BC001AD1B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		BF5223BA240D34BC001AD1B1 = {
 			isa = PBXGroup;
 			children = (
+				0481F3162523169D00D8255A /* Default-568h@2x.png */,
 				BF5223C5240D34BC001AD1B1 /* Tic-Tac-Toe */,
 				BF5223C4240D34BC001AD1B1 /* Products */,
 			);
@@ -139,6 +142,7 @@
 				BF5223D3240D34C1001AD1B1 /* LaunchScreen.storyboard in Resources */,
 				BF201919240DC3E70060A87F /* TradeWinds-Regular.ttf in Resources */,
 				BF5223D0240D34C1001AD1B1 /* Assets.xcassets in Resources */,
+				0481F3172523169D00D8255A /* Default-568h@2x.png in Resources */,
 				BF5223CE240D34BC001AD1B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
